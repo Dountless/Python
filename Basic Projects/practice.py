@@ -116,18 +116,71 @@
 # con.close()
 
 
-import sqlite3
-db=sqlite3.connect("deepak.db")
-cur=db.cursor()
-cur.execute("create table dictionary(word text ,meaning text)")
-# cur.execute("insert into dictionary(word,meaning) VALUES('doll','bool')");
-cur.execute("SELECT * FROM dictionary")
-for i in cur.fetchall():
-    print(i[0],i[1])
+# import sqlite3
+# db=sqlite3.connect("deepak.db")
+# cur=db.cursor()
+# cur.execute("create table dictionary(word text ,meaning text)")
+# # cur.execute("insert into dictionary(word,meaning) VALUES('doll','bool')");
+# cur.execute("SELECT * FROM dictionary")
+# for i in cur.fetchall():
+#     print(i[0],i[1])
 
-cur.execute("DELETE FROM DICTIONARY WHERE  meaning='bool'")
-for i in cur.fetchall():
-    print(i[0],i[1])
-db.commit()
-# print("table inserted")
-db.close()
+# cur.execute("DELETE FROM DICTIONARY WHERE  meaning='bool'")
+# for i in cur.fetchall():
+#     print(i[0],i[1])
+# db.commit()
+# # print("table inserted")
+# db.close()
+
+
+# def d():
+#     for i in range(7):
+#         yield i
+
+
+# for i in d():
+#     print(i)
+
+
+# l=list(range(1,11))
+# def sq(n):
+#     return n*n
+# l=map(sq,l)
+# print(list(l))
+
+# string="deepak"
+# print(string[-1::-1])
+# print(string[::-1])
+
+# l=[
+    
+# from collections import namedtuple
+
+# dost=namedtuple('friend',['aman','amit','hershit'])
+# dost_no=dost(1,32,43)
+# print(str(dost_no.amit))
+
+# import json
+
+# # a={
+# #     'name':'deepak',
+# #     'age':12,
+# #     'class':'BCA'
+# # }
+# b=['deepak','aman']
+
+# a=json.dumps(b)
+# print(type(a))
+# print(type(json.loads(a)))
+# import requests,json
+# import bs4
+# a=requests.get('https://www.bing.com/images/search?q=image&form=HDRSC2&first=1&tsc=ImageBasicHover')
+# soup=bs4.BeautifulSoup(a.text,'lxml')
+# print(type(soup))
+# a=soup.select('')
+# print(a[0].getText())
+a='deepak'
+b='verma'
+print(a+b)
+print(a+""+b)
+print(a+''+b)
