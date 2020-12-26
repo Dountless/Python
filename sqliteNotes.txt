@@ -1,0 +1,46 @@
+1.To use the sqlite module we need to import module our programm
+import sqlite3
+
+2.To connect the Database , we can use sqlite3.connect() function by passing the name of a file to open and create it.
+db=sqlite3.connect("file.db")
+
+
+3. Once u have a connection then u can  create a Cursor object and call execute() method to perform sql command
+cur=db.Cursor();
+
+
+4.create table
+
+    cur.execute("CREATE TABLE DATA(ID INTEGER PRIMARY KEY AUTOINCREMENT,WORD TEXT,MEANING TEXT)")
+    cur.execute("CREATE TABLE IF NOT EXISTS WORD_MEANING_DATA(ID INTEGER PRIMARY KEY AUTOINCREMENT,WORD TEXT,MEANING TEXT)")# 
+
+
+
+5. save(commit) the change
+db.commit()
+
+6.close connection
+db.close()
+
+
+
+for insert data 
+cur.execute("insert into login(UPASS,UNAME) VALUES("aman",'deepak'))
+
+
+for insert data as a variable
+x='aman'
+y='deepak'
+cur.execute("insert into login(UPASS,UNAME) VALUES('"+x+"','"+y+"'))
+
+
+print data
+cur.execute("SELECT * FROM DICTIONARY)
+for i in c.fatchall():
+    print(i)
+
+delete data
+cur.execute("DELETE FROM DICTIONARY WHERE ID=1")
+            cur.execute("DELETE FROM WORD_MEANING_DATA WHERE ID=?",[INDEX])
+
+
