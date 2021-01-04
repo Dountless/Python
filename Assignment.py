@@ -51,5 +51,18 @@
 #     print()
 
 
+#TODO palindrome number
+# n=input("enter a number")
+# if n==n[::-1]:
+#     print("number is palindrome")
+# else: 
+#     print("not a palindrome")
 
 
+#TODO Armstrome number
+n=input("enter a number:->")
+x=0
+for i in n:
+    x=x+int(i)**3
+if x==int(n):
+    print(f"{n} is a armstrome number")
