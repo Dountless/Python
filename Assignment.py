@@ -60,9 +60,47 @@
 
 
 #TODO Armstrome number
-n=input("enter a number:->")
-x=0
-for i in n:
-    x=x+int(i)**3
-if x==int(n):
-    print(f"{n} is a armstrome number")
+# n=input("enter a number:->")
+# x=0
+# for i in n:
+#     x=x+int(i)**3
+# if x==int(n):  
+#     print(f"{n} is a armstrome number")
+
+#NOTE:->What are the benefits of using python?
+        the benifits of using python are that it is simple and easy,
+        portable,extensible,build-in data structure and it is an open source .
+        Most important is that python comes with lots of libraries.
+
+# NOTE:->What is PEP 8?
+        PEP 8 is a coding cconvention,a set of recommendation,about how to write 
+        your python code more readable.
+        
+                Naming Styles
+        The table below outlines some of the common naming styles in Python code and when you should use them:
+
+        Type	Naming Convention	Examples
+        Function	Use a lowercase word or words. Separate words by underscores to improve readability.	function, my_function
+
+        Variable	Use a lowercase single letter, word, or words. Separate words with underscores to improve readability.	x, var, my_variable
+
+        Class	Start each word with a capital letter. Do not separate words with underscores. This style is called camel case.	Model, MyClass
+
+        Method	Use a lowercase word or words. Separate words with underscores to improve readability.	class_method, method
+
+        Constant	Use an uppercase single letter, word, or words. Separate words with underscores to improve readability.	CONSTANT, MY_CONSTANT, MY_LONG_CONSTANT
+
+        Module	Use a short, lowercase word or words. Separate words with underscores to improve readability.	module.py, my_module.py
+
+        Package	Use a short, lowercase word or words. Do not separate words with underscores.	package, mypackage
+
+
+#NOTE:->How memory is manage in python?
+    Python memory is manage by python private heap space. ALL python object 
+    and datastructure are located in private heap. the programmer does not 
+    have an access to this private heap and interpreter takes care of this python
+    private heap.the allocation of python heap space for python object is done by 
+    python memory manager.The core API give access to some tools for the programmer
+    to code .python also have a built-in garbage collector,which recycle all 
+    the unused memory and frees the memory and makes it available to heap spaces.
+    
